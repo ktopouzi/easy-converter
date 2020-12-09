@@ -1,5 +1,8 @@
 <template>
+<div class="container mx-auto px-4">
   <hello-world />
+  <div class="ml-5"> Hello from Tailwind</div>
+</div>
 </template>
 
 <script>
