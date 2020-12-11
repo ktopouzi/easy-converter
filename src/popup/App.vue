@@ -1,17 +1,23 @@
 <template>
-<div class="container mx-auto px-4">
-  <hello-world />
-  <div class="ml-5"> Hello from Tailwind</div>
+<div>
+  <Header/>
+  <router-view/>
 </div>
+
+
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Header from "@/components/UI/Header.vue";
 export default {
-  name: 'App',
-  components: { HelloWorld }
-}
+  name: "App",
+  components: {
+    Header,
+  },
+  created() {
+    this.$router.push('/')
+  }
+};
 </script>
 
 <style>
