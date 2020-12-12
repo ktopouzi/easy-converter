@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="antialiased box-border rounded-lg">
   <Header/>
   <router-view/>
 </div>
@@ -22,7 +22,7 @@ export default {
 
 <style>
 html {
-  width: 400px;
+  width: 300px;
   height: 400px;
 }
 </style>
